@@ -1,0 +1,363 @@
+@import"../Partials/font";
+@import"../Partials/function";
+@import"../Partials/globalRule";
+@import"../Partials/variable";
+
+
+
+
+.nav-mobile{
+    display: none;
+}
+.nav-square{
+    width: 100vw;
+    padding: 2rem 8.5rem;
+    margin: auto;
+    background-color: $white;
+    @include layout(row,space-between,center);
+
+
+    a{
+        font-family: $NotoSansTC, sans-serif;
+        color: $primaryColor;
+        font-weight: 500;
+        letter-spacing:$letterSpace;
+        font-size: $aword;
+
+        &:hover{
+            font-weight: 900;
+        }
+
+        &:visited{
+            color: $primaryColor;
+        }
+    }
+
+    .logoword{
+        font-family: "Averia Serif Libre", serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        
+    }
+
+    ul{
+        @include flex(row);
+
+        li{
+            padding: 0 2rem;
+            border-right: 1px $primary5 solid;
+
+        }
+        li:last-child{
+            border-right: none;
+
+        }
+
+        .productpage{
+            position: relative;
+            padding-bottom: .5rem;
+            z-index: 1;
+
+            
+
+                .dropdown-productpage{
+
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background-color: $lightgray;
+                    border-radius: .5rem;
+
+                    a{
+                        display: block;
+                        width: 100%;
+                        padding: 0.7rem 0;
+                        
+                        border-radius: .5rem;
+                        background-color:$lightgray;
+
+                        font-family: $NotoSansTC, serif;
+                        text-align: center;
+                        
+
+                        &:hover{
+                            color: $primaryColor;
+                            background-color: white;
+                            font-weight: 700;
+
+                        }
+                    }
+                }
+
+                &:hover{
+
+                    .dropdown-productpage{
+                        display: block;
+                    }
+
+                }
+
+
+
+            
+
+        }
+
+        .shoppingPage{
+            position: relative;
+            padding-bottom: .5rem;
+            z-index: 1;
+
+            &:hover{
+
+                .shoppingList{
+                    display: block;
+                   
+                }
+
+            }
+
+            .shoppingIcon{
+                position: relative;
+
+                .quantityNumber{
+                    padding: 5px;
+                    padding-left: 7px;
+                    position: absolute;
+                    top: -120%;
+                    right: -70%;
+                    
+
+                    background-color: $pointColor;
+                    border-radius: 1rem;
+                    color: white;
+                    text-align: center;
+                    font-size: 0.7rem;
+                }
+            }
+
+            
+            .shoppingList{
+                display: none;
+                width: 250%;
+
+
+                padding: 1rem;
+                position: absolute;
+                top: 100%;
+                left: -70%;
+                right: 0;
+
+                background-color: $lightgray;
+                border-radius: .5rem;
+
+                table{
+                    width: 100%;
+
+                    // background-color: aquamarine;
+
+                    th{
+                        text-align: center;
+                        padding: 0.2rem 0;
+
+
+                        
+                        color: $deepgray;
+                        font-size: .9rem;
+                        font-weight: 400;
+                        letter-spacing: $letterSpace;
+                    
+                    }
+                    
+                    td{
+                        text-align: center;
+                        padding: 0.5rem 0;
+                        font-size: 0.9rem;
+                    
+                    }
+
+                    .deleteBtn{
+                        color: $primary5;
+                        cursor: pointer;
+    
+    
+                    }
+
+                    .plusBtn,
+                    .minusBtn{
+
+                        margin: 0 .2rem;
+                        color: $primary5;
+    
+
+                        cursor: pointer;
+    
+    
+                    }
+                }
+
+                .countingSquare{
+                    padding: .5rem;
+                    margin-top: 1rem;
+
+                    h3{
+                        text-align: center;
+                        color: $primaryColor;
+                        font-size: 1.5rem;
+                    }
+
+                    .functionBtn{
+                        @include layout(row,space-between,center);
+
+                        .cleanBtn{
+                            width: 47%;
+                            padding: 0.5rem 0;
+                            margin: 1rem 0;
+        
+                            color: $deepgray;
+                            background-color: $gray;
+                            border: none;
+                            border-radius: 2rem;
+        
+                            font-size: 1rem;
+                            font-weight: 500;
+                            letter-spacing: $letterSpace;
+        
+                            cursor: pointer;
+                      
+                            
+                        }
+
+                        .shoppingBtn{
+                            width: 47%;
+                            padding: 0.5rem 0;
+                            margin: 1rem 0;
+   
+                            background-color: $pointColor;
+                            border: none;
+                            border-radius: 2rem;
+
+                            color: white;
+                                font-size: 1rem;
+                                font-weight: 700;
+                                letter-spacing: $letterSpace;
+        
+                            cursor: pointer;
+
+                            
+                        }
+
+                    }
+
+                    
+
+                }
+
+                
+
+            }
+
+            
+
+
+           
+
+           
+        }
+    }
+}
+
+.nav-square-fixed{
+    position: fixed;
+    z-index: 10;
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .nav-mobile{
+        display: block;
+        max-width: 90vw;
+        padding: 1rem 0;
+        margin: 0 auto;
+        @include layout(row,space-between,center);
+
+        position: relative;
+    
+    
+        .logoword{
+            font-family: "Averia Serif Libre", serif;
+            font-weight: 700;
+            font-size: 2rem;
+            letter-spacing: 0;
+            color: $primaryColor;
+
+            
+        }
+
+        .navBtn{
+            font-size: 1.2rem;
+            color: $primaryColor;
+            border: none;
+            background-color: transparent;
+        }
+
+        .menu{
+            min-width: 50vw;
+            min-height: 100vh;
+            padding: 2rem;
+            position: absolute;
+            top: 0%;
+            right:-200%;
+           
+            background-color: $lightgray;
+            z-index: 5;
+            transition: all 1s ease;
+
+
+
+            .closeBtn{
+                position: absolute;
+                top: 5%;
+                right: 10%;
+                color: $primaryColor;
+                font-size: 1.2rem;
+                background-color: transparent;
+                border: none;
+            }
+
+        }
+        .menu.open{
+            right:-5%;
+            transition: all 0.5s ease;
+
+        }
+
+        ul{
+
+            li{
+                margin: 2rem;
+                h3{
+                    font-size: 1.7rem;
+                    color: $primaryColor;
+
+                }
+                p{
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    letter-spacing: $letterSpace;
+                    color:$primary5;
+
+                }
+            }
+        }
+
+    }
+    .nav-square,
+    .nav-square-fixed{
+        display: none;
+    }
+    
+}

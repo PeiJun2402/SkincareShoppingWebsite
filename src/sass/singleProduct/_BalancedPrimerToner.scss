@@ -1,0 +1,122 @@
+@import"../Partials/font";
+@import"../Partials/function";
+@import"../Partials/globalRule";
+@import"../Partials/variable";
+
+
+
+.product-content{
+    width: 100vw;
+    min-height: 50vh;
+    @include layout(row,center,center);
+
+    .img{
+        flex: 1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+    }
+
+    .purchase-info{
+        flex: 1;
+        padding: 2rem 1rem;
+        padding-left: 5rem;
+
+        .product-name{
+            margin-bottom: 5rem;
+            h1{
+                font-size: 2.8rem;
+                color: $primaryColor;
+            }
+            h5{
+                font-size: 1.2rem;
+                color: $primary5;
+                letter-spacing: $letterSpace;
+
+            }
+        }
+
+        .product-detail{
+            width: 80%;
+            padding-bottom: 2rem;
+            border-bottom: black 1px solid;
+            h5{
+                font-size: 1rem;
+                color: $primary5;
+                margin-bottom: 0.5rem;
+
+            }
+        }
+
+        .add-shoppingCart{
+            margin: 1rem 0;
+            form{
+                label{
+                    display: block;
+                    color: $primary5;
+                    font-size: 1rem;
+                    font-family: $NotoSansTC, serif;
+                }
+    
+                input{
+                    padding: 0.5rem 1rem;
+                }
+    
+                .productPlusBtn,
+                .productMinusBtn{
+                    margin: 0 0.5rem;
+                    font-size: 1.5rem;
+                    color: $primary5;
+                    cursor: pointer;
+    
+                }
+
+            }
+            
+
+            .add-to-cart{
+                width: 80%;
+                margin: 2rem 0;
+                @include layout(row,space-between,center);
+                // background-color: aqua;
+
+                h5{
+                    font-size: 3rem;
+                    color: $pointColor;
+                }
+
+                .shoppingProductBtn{
+                    color:  $pointColor;
+                    background-color:transparent;
+                    padding: 1rem;
+                    border:  $pointColor 2px solid;
+                    border-radius: 2rem;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: white;
+                        background-color: $pointColor;
+                        border:$pointColor 2px solid;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+    .product-content{
+        @include layout(column,center,center);
+
+    }
+
+}

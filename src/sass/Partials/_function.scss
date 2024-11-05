@@ -1,0 +1,35 @@
+@mixin layout($direction,$horizontal,$vertical){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $horizontal;
+    align-items: $vertical;
+
+}
+
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+
+}
+
+@mixin wrap($direction,$horizontal,$vertical){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $horizontal;
+    align-content: $vertical;
+    flex-wrap: wrap;
+
+}
+
+@mixin RWD-flex($horizontal,$vertical){
+    display: flex;
+    flex-direction: column;
+    justify-content: $horizontal;
+    align-items: $vertical;
+
+}
+
+@mixin gridLayout($NumberOfCells,$size){
+    display: grid;
+    grid-template-columns: repeat($NumberOfCells,$size);
+}

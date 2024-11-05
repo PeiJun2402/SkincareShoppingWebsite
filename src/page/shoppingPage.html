@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/shoppingPage.css">
+    <script src="https://kit.fontawesome.com/5dbcc47141.js" crossorigin="anonymous"></script>
+    <link rel="icon"  href="../../public/logo icon-02.png" />
+    <title>購物車</title>
+</head>
+<body>
+       <!-- banner -->
+       <div class="hero-section">
+        <div class="nav-mobile">
+            <h1><a href="./home.html" class="logoword">skincare</a></h1>
+            <button class="navBtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu">
+              <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+              <ul>
+                <li>
+                  <a href="./aboutUs.html">
+                    <h3>About Us</h3>
+                    <p>關於我們</p>
+                  </a>
+                </li>
+                <li class="productpage">
+                  <a href="./product.html?skinType=全產品">
+                    <h3>All Product</h3>
+                    <p>產品頁面</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="shoppingPage" href="./shoppingPage.html">
+                    <h3>Shopping Cart</h3>
+                    <p>購物車<span><i class="fa-solid fa-cart-shopping shoppingIcon"></i></span></p>
+                  </a>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+          
+        <div class="nav-square">
+          <h1><a href="./home.html" class="logoword">skincare</a></h1>
+  
+          <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+
+                <li class="productpage">
+                  <a href="./product.html?skinType=全產品">產品頁面</a>
+                    
+                  <div class="dropdown-productpage">
+                    <a href="./product.html?skinType=全產品">全產品</a>
+                    <a href="./product.html?skinType=乾癢肌">乾癢肌</a>
+                    <a href="./product.html?skinType=中性肌">中性肌</a>
+                    <a href="./product.html?skinType=油田肌">油田肌</a>
+                  </div>
+
+                </li>
+
+                <li><a href="./shoppingPage.html">購物車</a></li>
+               
+          </ul>
+        </div>
+     </div>
+
+
+
+
+
+    <!-- shopping section-->
+
+    <section class="shoppingSection">
+        <div class="prdcedure">
+            <div class="atStep">
+                <h5>1</h5>
+                <p>確認品項</p>
+            </div>
+            <div>
+                <h5>2</h5>
+                <p>收件資訊</p>
+            </div>
+            <div>
+                <h5>3</h5>
+                <p>訂單完成</p>
+            </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+
+        </div>
+        <div class="billInform">
+            <div class="displayItem">
+                <h3>購物車 | 共<span  class="quantityNumber">0</span>件商品 | 總金額: NT <span class="totalDoller">0</span></h3>
+                <table  class="listTable">
+                </table>
+
+                <button class="nextStep1">下一步</button>
+
+                 
+            </div>
+            <div class="shippingInfo">
+                <h3>選擇送貨及付款方式</h3>
+                <form>
+                    <label for="pocition">送貨地點</label>
+                    <input type="text" class="addressInput" placeholder="xx市xx區">
+                    <label for="cradit">付款方式</label>
+                    <select class="paymentSelect">
+                        <option value="credit card">信用卡</option>
+                        <option value="cash">貨到付款</option>
+
+                      </select>
+                </form>
+                <button class="lastStep">上一步</button>
+            </div>
+            <div class="tatalDetail">
+                <h3>訂單資訊</h3>
+                <div class="orderDetail">
+                    <div class="number">
+                        <p>數量總和</p>
+                        <h5><span class="quantityNumber1">0</span>件商品</h5>
+                    </div>
+                    <div class="totalPrice">
+                        <p>訂單總和</p>
+                        <h5 >NT<span class="totalDoller1">0</span></h5>
+                    </div>
+                </div>
+                <button class="nextStep2">提交訂單</button>
+            </div>
+            <div class="finishOrder">
+                <div class="billInfo">
+                    <h1>訂購完成</h1>
+                    <div class="orderInfo">
+                        <p>將以<span class="paymentMethod">xxxx</span>方式付款</p>
+                        <p>預計於7天後送達指定地址- <span class="address">xxxx</span></p>
+                    </div>
+                    <a href="/index.html" >回到首頁</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footerSection">
+            <div class="brandName">
+            <h1><a href="./home.html" class="logoword">skincare</a></h1>
+            <p>Follow Us</p>
+            <div class="socialMedia">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            </div>
+
+            <div class="siteMap">
+            <h3>Site Map</h3>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./product.html?skinType=全產品">產品頁面</a></li>
+                <li><a href="./shoppingPage.html">購物車</a></li>
+            </ul>
+            </div>
+            
+            <div class="contactUs">
+                <h3>Contact Us</h3>
+                <p>phone:04-xxxxxxxx</p>
+                <p>email:exmple@gmail.com</p>
+            </div>
+        </div>
+        <h5 class="copyrightWord">此網站為練習作品，無任何商業用途 <span class="copyrightYear">2024</span></h5>
+    </footer>
+
+    <script type="module" src="../script/shoppingPage.js"></script>
+</body>
+</html>

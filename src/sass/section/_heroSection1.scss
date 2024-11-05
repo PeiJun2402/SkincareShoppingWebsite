@@ -1,0 +1,36 @@
+
+@import "./nav1";
+
+.hero-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../public/image/heroImg50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    position: relative;
+  
+  
+    header{
+      // @include layout(column,center,center);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+  
+      text-align: center;
+      
+    }
+  }
+  
+  section{
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 768px){
+    
+  }
+  

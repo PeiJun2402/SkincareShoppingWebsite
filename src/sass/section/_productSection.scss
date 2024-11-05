@@ -1,0 +1,185 @@
+@import"../Partials/font";
+@import"../Partials/function";
+@import"../Partials/globalRule";
+@import"../Partials/variable";
+
+.product-section{
+    width: 80vw;
+    min-height: 270vh;
+    margin: auto;
+    padding-bottom: 3rem;
+
+    h1{
+        padding-top: 5rem ;
+        text-align: center;
+        color: $primaryColor;
+    }
+
+    .menu-btn-section{
+        width: 100%;
+        padding: 2rem 0 ;
+        @include layout(row,center,center);
+
+        .menuBtn{
+            padding: 1rem 5rem;
+            background-color: transparent;
+            border: none;
+            border-right: 1.5px $deepgray solid;
+            color: $deepgray;
+
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: $letterSpace;
+
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                color: $pointColor;
+            }
+        }
+
+        .menuBtn:last-child{
+            border-right: none;
+
+        }
+    }
+
+    .product-square{
+        width: 100%;
+        padding-top: 2rem ;
+
+        display: grid;
+        @include gridLayout(3,1fr);
+        row-gap: 4rem;
+        column-gap: 2rem;
+
+
+
+        .single-card{
+            height: 480px;
+            position: relative;
+
+            a{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                border-radius: 2rem;
+                z-index: 1;
+            }
+
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+
+            .card-word{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                @include layout(column,space-between,center);
+    
+
+                .top-word{
+                    width: 90%;
+                    padding-top:2rem; 
+                    @include layout(row,space-between,center);
+
+                    
+    
+                    h5{
+                        font-size:$pword;
+                        letter-spacing: 0.1rem;
+                        padding: 0.4rem 1rem;
+                        border-radius: 2rem;
+                        p{
+                            letter-spacing: 0.8rem;
+                            margin-top: 0.2rem;
+                        }
+                    
+                    }
+                    .addProductBtn{
+                        background-color: transparent;
+                        font-size:$pword;
+                        letter-spacing: 0.05rem;
+                        padding: 0.7rem 1rem;
+                        border: 1px solid black;;
+                        border-radius: 2rem;
+                        cursor: pointer;
+                        z-index: 2;
+
+                        &:hover{
+                            background-color: $pointColor;
+                            border: 1px solid  $pointColor;
+                            color: white;
+                        }
+
+                    }
+                }
+    
+                .buttom-word{
+                    width: 90%;
+                    padding-bottom: 1.2rem;
+                    @include layout(row,space-between,flex-end);
+    
+                    .left-word{
+                        padding: 0 0.7rem;
+                        border-left: 3px solid black;
+
+                        h3{
+                            font-size: 1.7rem;
+                        }
+                        p{
+                            font-size: 0.8rem;
+                        }
+                    }
+    
+                    .right-word{
+                        p{
+                            font-size: 2.4rem;
+                            font-weight: 500;
+                        }
+                    }
+    
+                }
+
+            }
+
+            
+        }
+
+        
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .product-section{
+        .menu-btn-section{
+            @include layout(column,center,center);
+
+            .menuBtn{
+                border-right: none;
+
+            }
+
+        }
+        .product-square{
+            @include gridLayout(1,1fr);
+    
+        }
+
+    }
+
+
+
+}

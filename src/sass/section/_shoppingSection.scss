@@ -1,0 +1,468 @@
+@import"../Partials/font";
+@import"../Partials/function";
+@import"../Partials/globalRule";
+@import"../Partials/variable";
+
+
+
+.shoppingSection{
+    width: 100vw;
+    min-height: 150vh;
+
+
+
+    .prdcedure{
+        width: 50%;
+        margin: 2rem auto;
+        position: relative;
+        @include layout(row,space-between,center);
+
+        .atStep {
+            h5{
+                padding: 1rem;
+                border-radius: 4rem;
+                background-color: $primaryColor;
+                color: white;
+    
+                font-size: 1.5rem;
+                text-align: center;
+    
+                
+    
+    
+            }
+
+            p{
+                color: $primaryColor;
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+        }
+
+        div:not(.atStep){
+            h5{
+                padding: 1rem;
+                border-radius: 4rem;
+                background-color: $primary1;
+                color: white;
+    
+                font-size: 1.5rem;
+                text-align: center;
+    
+            }
+
+            p{
+                color: $primary1;
+                text-align: center;
+                margin-top: 1rem;
+
+            }
+
+        }
+
+        .line1{
+            position: absolute;
+            top: 50%;
+            left: 14%;
+            width: 13rem;
+            height: 1.5px;
+            background-color:$primary1;
+
+        }
+        .line2{
+            position: absolute;
+            top: 50%;
+            right: 14%;
+            width: 13rem;
+            height: 1.5px;
+            background-color: $primary1;
+
+        }
+
+    }
+
+    .billInform{
+        width: 80%;
+        min-height: 100vh;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        .displayItem{
+            display: block;
+            padding: 3rem 2rem;
+            grid-column: 1 / 3;
+            border-radius: 1rem;
+
+            position: relative;
+
+
+            box-shadow:0 0px 15px 0 rgba(0, 0, 0, 0.15);
+
+            h3{
+                color: $deepgray;
+                font-weight: 400;
+                letter-spacing: $letterSpace;
+                font-family: $NotoSansTC, serif;
+
+                span{
+                    color: $pointColor;
+                    font-weight: 900;
+
+                }
+            }
+
+            table{
+                width: 100%;
+                margin: 1rem 0;
+                border-collapse: collapse;
+
+                th{
+                    height: 50px;
+                    color: $deepgray;
+                    font-weight: 400;
+                    letter-spacing: $letterSpace;
+                    font-family: $NotoSansTC, serif;
+
+                    border-bottom: 1px $gray solid;
+                    
+                
+                }
+
+                td{
+                    height: 50px;
+                    text-align: center;
+                    font-family: $NotoSansTC, serif;
+                }
+
+                .deleteBtn{
+
+                    padding: 1rem;
+                    color: $primary5;
+                    cursor: pointer;
+
+
+                }
+
+                .plusBtn,
+                .minusBtn{
+                    padding: 0.5rem;
+                    margin: 0 1rem;
+                    background-color: $lightgray;
+                    color: $primary5;
+
+                    border-radius: 2rem;
+                    cursor: pointer;
+
+
+                }
+                
+            }
+   
+                .nextStep1{
+                    
+                    padding: 0.7rem 3rem;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 7%;
+    
+    
+                    border: none;
+                    border-radius: 2rem;
+    
+                    background-color: $pointColor;
+                    color: white;
+                    font-family: $NotoSansTC, serif;
+
+                    cursor: pointer;
+                }
+
+
+            
+        }
+
+        .shippingInfo{
+            display: none;
+            padding: 3rem 2rem;
+            border-radius: 1rem;
+            box-shadow:0 0px 15px 0 rgba(0, 0, 0, 0.15);
+            position: relative;
+
+            h3{
+                padding: 1rem 0 ;
+                border-bottom: 1px $gray solid;
+                color: $deepgray;
+
+                text-align: center;
+                font-weight: 400;
+                letter-spacing: $letterSpace;
+                font-family: $NotoSansTC, serif;
+
+
+
+            }
+
+            form{
+
+                label{
+                    display: block;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+
+                    
+                }
+
+                input{
+                    width: 100%;
+                    padding: .5rem 0;
+                }
+                select{
+                    width: 100%;
+                    padding: .5rem 0;
+                }
+
+            }
+
+            .lastStep{
+                    
+                padding: 1rem 3rem;
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+
+
+                border: none;
+                border-radius: 2rem;
+
+                background-color: $primaryColor;
+                color: white;
+                font-family: $NotoSansTC, serif;
+
+                cursor: pointer;
+            }
+        }
+        .tatalDetail{
+            display: none;
+            padding: 3rem 2rem;
+            border-radius: 1rem;
+            box-shadow:0 0px 15px 0 rgba(0, 0, 0, 0.15);
+            position: relative;
+
+            h3{
+                padding: 1rem 0 ;
+                border-bottom: 1px $gray solid;
+                color: $deepgray;
+
+                text-align: center;
+                font-weight: 400;
+                letter-spacing: $letterSpace;
+                font-family: $NotoSansTC, serif;
+
+
+            }
+
+            .orderDetail{
+                
+                @include layout(row,space-around,center);
+                
+
+                .number{
+
+                    padding: 5rem 1rem;
+                    @include layout(column,space-between,center);
+
+                    p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        letter-spacing: $letterSpace;
+
+                        margin-bottom: 3rem;
+                    }
+
+                    h5{
+                        font-size: 2rem;
+                        color: $primaryColor;
+                    }
+
+                }
+
+                .totalPrice{
+                    @include layout(column,space-around,center);
+
+                    p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        letter-spacing: $letterSpace;
+
+                        margin-bottom: 3rem;
+                        
+                    }
+
+                    
+                    h5{
+                        font-size: 2rem;
+                        color: $pointColor;
+                    }
+
+                   
+    
+
+                }
+
+            }
+
+            .nextStep2{
+                    
+                padding: 1rem 3rem;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+
+
+                border: none;
+                border-radius: 2rem;
+
+                background-color: $pointColor;
+                color: white;
+                font-family: $NotoSansTC, serif;
+
+                cursor: pointer;
+            }
+        }
+
+        .finishOrder{
+            display: none;
+            padding: 3rem 2rem;
+            grid-column: 1 / 3;
+            border-radius: 1rem;
+          
+
+
+            text-align: center;
+
+            box-shadow:0 0px 15px 0 rgba(0, 0, 0, 0.15);
+
+            .billInfo{
+                padding: 5rem 0 ;
+                @include layout(column,space-around,center);
+                
+                h1{
+                    font-family: $NotoSansTC, serif;
+                    font-weight: 800;
+                    font-size: 2rem;
+      
+    
+                }
+                .orderInfo{
+                    margin: 3rem 0;
+                    font-size: 1.2rem;
+
+                    .paymentMethod,
+                    .address{
+                        margin: 0 .5rem;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: $pointColor;
+                    }
+                }
+                a{
+                        
+                    padding: 1rem 3rem;
+                  
+    
+    
+    
+                    border: none;
+                    border-radius: 2rem;
+    
+                    background-color: $primaryColor;
+                    color: white;
+                    font-family: $NotoSansTC, serif;
+    
+                    cursor: pointer;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .shoppingSection{
+        .prdcedure{
+            width: 80%;
+    
+            .line1{
+                top: 35%;
+                left: 20%;
+                width: 5rem;
+
+    
+            }
+            .line2{
+                top: 35%;
+                right: 20%;
+                width: 5rem;
+
+    
+            }
+
+        }
+
+
+    }
+
+    .billInform{
+
+        .displayItem{
+            h3{
+                font-size: 0.9rem;
+            }
+
+            .listTable{
+                th{
+                    font-size: 0.7rem;
+                }
+                td{
+                    font-size: 0.7rem;
+
+                }
+    
+                
+
+            }
+
+        }
+
+
+    }
+
+    .shippingInfo{
+        grid-column: 1 / 3;
+
+        .lastStep{
+            left: 50% !important;
+            transform: translateX(-50%)!important;
+
+        }
+
+    }
+    .tatalDetail{
+        grid-column: 1 / 3;
+        .nextStep2{
+            right: 50%!important;
+            transform: translateX(50%)!important;
+        }
+
+    }
+
+}

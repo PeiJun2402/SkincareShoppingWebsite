@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+//  font var //
+$AveriaSerifLibre:"Averia Serif Libre";
+$Barlow:"Barlow";
+$NotoSansTC:"Noto Sans TC";
+
+
+//  letter sixe&space var//
+$letterSpace:0.2rem;
+$aword:0.85rem;
+$pword:0.7rem;
+$normalword:2rem;
+
+h1,h2,h3{
+    font-family: $AveriaSerifLibre, serif;
+}
+
+p{
+    font-family: $NotoSansTC, serif;
+}
+
+li{
+    font-family: $NotoSansTC, serif;
+
+}
+
+a{
+    font-family: $Barlow, sans-serif;
+}

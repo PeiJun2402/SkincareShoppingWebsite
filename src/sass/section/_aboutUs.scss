@@ -1,0 +1,246 @@
+@import"../Partials/font";
+@import"../Partials/function";
+@import"../Partials/globalRule";
+@import"../Partials/variable";
+
+
+
+.aboutUs{
+    width: 100vw;
+    min-height: 150vh;
+    
+    .introduceSection{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            color: $primaryColor;
+            margin-top: 5rem;
+            font-size: 3rem;
+
+        }
+
+        .subtitle{
+            width: 50%;
+            margin: 3rem auto;
+
+
+
+            h3{
+                border-left: 2px  $pointColor solid;
+                border-right: 2px  $pointColor solid;
+
+                font-weight: 500;
+                font-size: 1.2rem;
+                letter-spacing: 1rem;
+                color: $pointColor;
+    
+    
+            }
+    
+
+        }
+
+        
+        .pWord{
+            margin-top: 4rem;
+
+            p{
+                color: $deepgray;
+                margin-top: 3rem;
+                letter-spacing: $letterSpace;
+                line-height:2rem;
+
+            
+            }
+
+
+
+        }
+
+        
+    }
+
+
+    .contactusSection{
+        width: 80%;
+        margin: 5rem auto;
+
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap: 1rem;
+
+
+        .phone,
+        .email{
+            padding: 4rem 0;
+            background-color: $lightgray;
+
+            @include layout(row,center,center);
+
+            i{
+                padding: 2rem;
+                background-color: white;
+                border-radius: 5rem;
+
+                font-size: 1.5rem;
+                color: $primaryColor;
+
+            }
+
+            .info-word{
+                margin-left: 2rem;
+
+                h5{
+                    font-size: 1.7rem;
+                    letter-spacing: $letterSpace;
+                    color: $deepgray;
+                }
+
+                p{
+                    margin: 0.5rem 0;
+                    letter-spacing: $letterSpace;
+                    color: $deepgray;
+                    font-size: 0.8rem;
+                }
+
+            }
+
+
+        }
+
+
+        .socialmedia{
+            background-color: $lightgray;
+            grid-column:1/3;
+
+            padding: 2rem;
+            @include layout(row,center,center);
+
+            .socialmedisSquare{
+                i{
+                    padding: 2.3rem;
+                    margin: 0 2rem;
+                    background-color: white;
+                    border-radius: 5rem;
+
+                    font-size: 1.8rem;
+                    color: $primaryColor;
+
+                }
+            }
+
+            .info-word{
+                margin-left: 6rem;
+                text-align: center;
+
+                h5{
+                    font-size: 1.7rem;
+                    letter-spacing: $letterSpace;
+                    color: $deepgray;
+                }
+
+                p{
+                    margin: 0.5rem 0;
+                    letter-spacing: $letterSpace;
+                    color: $deepgray;
+                    font-size: 0.8rem;
+                }
+
+            }
+
+
+
+        }
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .aboutUs{
+        .introduceSection{
+            h1{
+                font-size: 2.5rem;
+    
+            }
+
+            .subtitle{
+                width: 100%;
+                margin: 1rem auto;
+    
+    
+    
+                h3{
+                    font-size: 1rem;
+                    text-align: center;
+        
+        
+                }
+        
+    
+            }
+
+        }
+        .contactusSection{
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 1fr 1fr;
+
+        .phone{
+            grid-row: 1/2;
+            padding: 2rem 0;
+            @include layout(column,center,center);
+
+            
+            .info-word{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                text-align: center;
+            }
+           
+        }
+        .email{
+            grid-row: 2/3;
+            padding: 2rem 0;
+            @include layout(column,center,center);
+
+            
+            .info-word{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                text-align: center;
+            }
+        }
+        .socialmedia{
+            grid-row: 3/4;
+            grid-column:1/2;
+            @include layout(column,center,center);
+
+            .socialmedisSquare{
+                i{
+                    padding: 1.2rem;
+                    margin: 0 1rem;
+
+                }
+
+                
+            }
+
+            
+            .info-word{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                text-align: center;
+
+            }
+        }
+        
+
+        }
+
+    }
+}

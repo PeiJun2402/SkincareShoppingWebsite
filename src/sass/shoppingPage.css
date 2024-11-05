@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+h1, h2, h3 {
+  font-family: "Averia Serif Libre", serif;
+}
+
+p {
+  font-family: "Noto Sans TC", serif;
+}
+
+li {
+  font-family: "Noto Sans TC", serif;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-square {
+  width: 100vw;
+  padding: 2rem 8.5rem;
+  margin: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-square a {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #4B6C3C;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-size: 0.85rem;
+}
+.nav-square a:hover {
+  font-weight: 900;
+}
+.nav-square a:visited {
+  color: #4B6C3C;
+}
+.nav-square .logoword {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.nav-square ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-square ul li {
+  padding: 0 2rem;
+  border-right: 1px #566650 solid;
+}
+.nav-square ul li:last-child {
+  border-right: none;
+}
+.nav-square ul .productpage {
+  position: relative;
+  padding-bottom: 0.5rem;
+  z-index: 1;
+}
+.nav-square ul .productpage .dropdown-productpage {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #F1F1F1;
+  border-radius: 0.5rem;
+}
+.nav-square ul .productpage .dropdown-productpage a {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  background-color: #F1F1F1;
+  font-family: "Noto Sans TC", serif;
+  text-align: center;
+}
+.nav-square ul .productpage .dropdown-productpage a:hover {
+  color: #4B6C3C;
+  background-color: white;
+  font-weight: 700;
+}
+.nav-square ul .productpage:hover .dropdown-productpage {
+  display: block;
+}
+.nav-square ul .shoppingPage {
+  position: relative;
+  padding-bottom: 0.5rem;
+  z-index: 1;
+}
+.nav-square ul .shoppingPage:hover .shoppingList {
+  display: block;
+}
+.nav-square ul .shoppingPage .shoppingIcon {
+  position: relative;
+}
+.nav-square ul .shoppingPage .shoppingIcon .quantityNumber {
+  padding: 5px;
+  padding-left: 7px;
+  position: absolute;
+  top: -120%;
+  right: -70%;
+  background-color: #FF9090;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.nav-square ul .shoppingPage .shoppingList {
+  display: none;
+  width: 250%;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: -70%;
+  right: 0;
+  background-color: #F1F1F1;
+  border-radius: 0.5rem;
+}
+.nav-square ul .shoppingPage .shoppingList table {
+  width: 100%;
+}
+.nav-square ul .shoppingPage .shoppingList table th {
+  text-align: center;
+  padding: 0.2rem 0;
+  color: #1A1A1A;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.nav-square ul .shoppingPage .shoppingList table td {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.nav-square ul .shoppingPage .shoppingList table .deleteBtn {
+  color: #566650;
+  cursor: pointer;
+}
+.nav-square ul .shoppingPage .shoppingList table .plusBtn,
+.nav-square ul .shoppingPage .shoppingList table .minusBtn {
+  margin: 0 0.2rem;
+  color: #566650;
+  cursor: pointer;
+}
+.nav-square ul .shoppingPage .shoppingList .countingSquare {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.nav-square ul .shoppingPage .shoppingList .countingSquare h3 {
+  text-align: center;
+  color: #4B6C3C;
+  font-size: 1.5rem;
+}
+.nav-square ul .shoppingPage .shoppingList .countingSquare .functionBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-square ul .shoppingPage .shoppingList .countingSquare .functionBtn .cleanBtn {
+  width: 47%;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  color: #1A1A1A;
+  background-color: #E5E5E5;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+.nav-square ul .shoppingPage .shoppingList .countingSquare .functionBtn .shoppingBtn {
+  width: 47%;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  background-color: #FF9090;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.nav-square-fixed {
+  position: fixed;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+    max-width: 90vw;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .nav-mobile .logoword {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0;
+    color: #4B6C3C;
+  }
+  .nav-mobile .navBtn {
+    font-size: 1.2rem;
+    color: #4B6C3C;
+    border: none;
+    background-color: transparent;
+  }
+  .nav-mobile .menu {
+    min-width: 50vw;
+    min-height: 100vh;
+    padding: 2rem;
+    position: absolute;
+    top: 0%;
+    right: -200%;
+    background-color: #F1F1F1;
+    z-index: 5;
+    transition: all 1s ease;
+  }
+  .nav-mobile .menu .closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: #4B6C3C;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+  }
+  .nav-mobile .menu.open {
+    right: -5%;
+    transition: all 0.5s ease;
+  }
+  .nav-mobile ul li {
+    margin: 2rem;
+  }
+  .nav-mobile ul li h3 {
+    font-size: 1.7rem;
+    color: #4B6C3C;
+  }
+  .nav-mobile ul li p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    color: #566650;
+  }
+  .nav-square,
+  .nav-square-fixed {
+    display: none;
+  }
+}
+h1, h2, h3 {
+  font-family: "Averia Serif Libre", serif;
+}
+
+p {
+  font-family: "Noto Sans TC", serif;
+}
+
+li {
+  font-family: "Noto Sans TC", serif;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.shoppingSection {
+  width: 100vw;
+  min-height: 150vh;
+}
+.shoppingSection .prdcedure {
+  width: 50%;
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoppingSection .prdcedure .atStep h5 {
+  padding: 1rem;
+  border-radius: 4rem;
+  background-color: #4B6C3C;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.shoppingSection .prdcedure .atStep p {
+  color: #4B6C3C;
+  text-align: center;
+  margin-top: 1rem;
+}
+.shoppingSection .prdcedure div:not(.atStep) h5 {
+  padding: 1rem;
+  border-radius: 4rem;
+  background-color: #DEEBD9;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.shoppingSection .prdcedure div:not(.atStep) p {
+  color: #DEEBD9;
+  text-align: center;
+  margin-top: 1rem;
+}
+.shoppingSection .prdcedure .line1 {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  width: 13rem;
+  height: 1.5px;
+  background-color: #DEEBD9;
+}
+.shoppingSection .prdcedure .line2 {
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  width: 13rem;
+  height: 1.5px;
+  background-color: #DEEBD9;
+}
+.shoppingSection .billInform {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.shoppingSection .billInform .displayItem {
+  display: block;
+  padding: 3rem 2rem;
+  grid-column: 1/3;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.shoppingSection .billInform .displayItem h3 {
+  color: #1A1A1A;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-family: "Noto Sans TC", serif;
+}
+.shoppingSection .billInform .displayItem h3 span {
+  color: #FF9090;
+  font-weight: 900;
+}
+.shoppingSection .billInform .displayItem table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+.shoppingSection .billInform .displayItem table th {
+  height: 50px;
+  color: #1A1A1A;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-family: "Noto Sans TC", serif;
+  border-bottom: 1px #E5E5E5 solid;
+}
+.shoppingSection .billInform .displayItem table td {
+  height: 50px;
+  text-align: center;
+  font-family: "Noto Sans TC", serif;
+}
+.shoppingSection .billInform .displayItem table .deleteBtn {
+  padding: 1rem;
+  color: #566650;
+  cursor: pointer;
+}
+.shoppingSection .billInform .displayItem table .plusBtn,
+.shoppingSection .billInform .displayItem table .minusBtn {
+  padding: 0.5rem;
+  margin: 0 1rem;
+  background-color: #F1F1F1;
+  color: #566650;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.shoppingSection .billInform .displayItem .nextStep1 {
+  padding: 0.7rem 3rem;
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+  border: none;
+  border-radius: 2rem;
+  background-color: #FF9090;
+  color: white;
+  font-family: "Noto Sans TC", serif;
+  cursor: pointer;
+}
+.shoppingSection .billInform .shippingInfo {
+  display: none;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.shoppingSection .billInform .shippingInfo h3 {
+  padding: 1rem 0;
+  border-bottom: 1px #E5E5E5 solid;
+  color: #1A1A1A;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-family: "Noto Sans TC", serif;
+}
+.shoppingSection .billInform .shippingInfo form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.shoppingSection .billInform .shippingInfo form input {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.shoppingSection .billInform .shippingInfo form select {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.shoppingSection .billInform .shippingInfo .lastStep {
+  padding: 1rem 3rem;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  border: none;
+  border-radius: 2rem;
+  background-color: #4B6C3C;
+  color: white;
+  font-family: "Noto Sans TC", serif;
+  cursor: pointer;
+}
+.shoppingSection .billInform .tatalDetail {
+  display: none;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.shoppingSection .billInform .tatalDetail h3 {
+  padding: 1rem 0;
+  border-bottom: 1px #E5E5E5 solid;
+  color: #1A1A1A;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-family: "Noto Sans TC", serif;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .number {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .number p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .number h5 {
+  font-size: 2rem;
+  color: #4B6C3C;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .totalPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .totalPrice p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.shoppingSection .billInform .tatalDetail .orderDetail .totalPrice h5 {
+  font-size: 2rem;
+  color: #FF9090;
+}
+.shoppingSection .billInform .tatalDetail .nextStep2 {
+  padding: 1rem 3rem;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  border-radius: 2rem;
+  background-color: #FF9090;
+  color: white;
+  font-family: "Noto Sans TC", serif;
+  cursor: pointer;
+}
+.shoppingSection .billInform .finishOrder {
+  display: none;
+  padding: 3rem 2rem;
+  grid-column: 1/3;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.shoppingSection .billInform .finishOrder .billInfo {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.shoppingSection .billInform .finishOrder .billInfo h1 {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.shoppingSection .billInform .finishOrder .billInfo .orderInfo {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+.shoppingSection .billInform .finishOrder .billInfo .orderInfo .paymentMethod,
+.shoppingSection .billInform .finishOrder .billInfo .orderInfo .address {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FF9090;
+}
+.shoppingSection .billInform .finishOrder .billInfo a {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #4B6C3C;
+  color: white;
+  font-family: "Noto Sans TC", serif;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .shoppingSection .prdcedure {
+    width: 80%;
+  }
+  .shoppingSection .prdcedure .line1 {
+    top: 35%;
+    left: 20%;
+    width: 5rem;
+  }
+  .shoppingSection .prdcedure .line2 {
+    top: 35%;
+    right: 20%;
+    width: 5rem;
+  }
+  .billInform .displayItem h3 {
+    font-size: 0.9rem;
+  }
+  .billInform .displayItem .listTable th {
+    font-size: 0.7rem;
+  }
+  .billInform .displayItem .listTable td {
+    font-size: 0.7rem;
+  }
+  .shippingInfo {
+    grid-column: 1/3;
+  }
+  .shippingInfo .lastStep {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .tatalDetail {
+    grid-column: 1/3;
+  }
+  .tatalDetail .nextStep2 {
+    right: 50% !important;
+    transform: translateX(50%) !important;
+  }
+}
+h1, h2, h3 {
+  font-family: "Averia Serif Libre", serif;
+}
+
+p {
+  font-family: "Noto Sans TC", serif;
+}
+
+li {
+  font-family: "Noto Sans TC", serif;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.footer {
+  width: 100vw;
+  min-height: 30vh;
+  padding: 3rem;
+  background-color: #566650;
+}
+.footer .copyrightWord {
+  color: #819977;
+  letter-spacing: 0.7rem;
+  text-align: center;
+  font-weight: 200;
+}
+.footer .footerSection {
+  width: 80vw;
+  height: 90%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footerSection .brandName {
+  flex: 1;
+  height: 70%;
+  color: white;
+  margin: 0 2rem;
+  border-right: 2px #DEEBD9 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .footerSection .brandName .logoword {
+  font-size: 4rem;
+  color: white;
+  font-family: "Averia Serif Libre", serif;
+}
+.footer .footerSection .brandName p {
+  margin-top: 1rem;
+}
+.footer .footerSection .brandName .socialMedia i {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  margin-top: 0.5rem;
+}
+.footer .footerSection .brandName .socialMedia i:first-child {
+  margin-left: 0;
+}
+.footer .footerSection .siteMap {
+  flex: 1;
+  height: 70%;
+  color: white;
+  margin: 0 2rem;
+  padding-right: 4rem;
+  border-right: 2px #DEEBD9 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerSection .siteMap h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer .footerSection .siteMap ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerSection .siteMap ul li {
+  margin: 0.2rem 0;
+}
+.footer .footerSection .siteMap ul li a {
+  color: white;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s ease;
+}
+.footer .footerSection .siteMap ul li a:hover {
+  color: #FF9090;
+}
+.footer .footerSection .contactUs {
+  flex: 1;
+  height: 70%;
+  color: white;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerSection .contactUs h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.footer .footerSection .contactUs p {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 0.2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footerSection {
+    width: 80vw;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footerSection .brandName {
+    flex: 1;
+    height: 70%;
+    color: white;
+    margin: 2rem 0;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerSection .brandName .logoword {
+    font-size: 4rem;
+    color: white;
+    font-family: "Averia Serif Libre", serif;
+  }
+  .footer .footerSection .brandName p {
+    margin-top: 1rem;
+  }
+  .footer .footerSection .brandName .socialMedia i {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    margin-top: 0.5rem;
+  }
+  .footer .footerSection .brandName .socialMedia i:first-child {
+    margin-left: 0;
+  }
+  .footer .footerSection .siteMap {
+    flex: 1;
+    height: 70%;
+    color: white;
+    margin: 2rem 0;
+    padding-right: 0rem;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerSection .siteMap h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footerSection .siteMap ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerSection .siteMap ul li {
+    margin: 0.2rem 0;
+  }
+  .footer .footerSection .siteMap ul li a {
+    color: white;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease;
+  }
+  .footer .footerSection .siteMap ul li a:hover {
+    color: #FF9090;
+  }
+  .footer .footerSection .contactUs {
+    flex: 1;
+    height: 70%;
+    color: white;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerSection .contactUs h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer .footerSection .contactUs p {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin: 0.2rem 0;
+  }
+}/*# sourceMappingURL=shoppingPage.css.map */
