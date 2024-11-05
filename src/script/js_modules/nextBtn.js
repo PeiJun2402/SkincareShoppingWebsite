@@ -1,4 +1,4 @@
-import {  cartItem } from './cartItem';
+import {  cartItem } from './cartItem.js';
 
 export function nextBtn(){
 

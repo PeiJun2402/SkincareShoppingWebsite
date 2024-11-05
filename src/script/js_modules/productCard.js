@@ -1,4 +1,4 @@
-import { diaplayRecomCard }from './displayCard'
+import { diaplayRecomCard }from './displayCard.js'
 
 export async function productCard(skintype){
     //【CATCH】 html element

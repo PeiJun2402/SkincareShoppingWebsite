@@ -1,5 +1,5 @@
-import {  localstorageData } from './localStorage';
-import {  cartItem } from './cartItem';
+import {  localstorageData } from './localStorage.js';
+import {  cartItem } from './cartItem.js';
 
 export async function  purchasingProductData(id){
 
