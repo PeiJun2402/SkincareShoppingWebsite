@@ -3,7 +3,7 @@ import {  cartItem } from './cartItem.js';
 export function countingSquare(){
 
     //【CATCH】 html element
-    const cleanBtn = document.querySelector(".countingSquare .cleanBtn");
+    const cleanBtn = document.querySelector(".cleanBtn");
     const shoppingBtn = document.querySelector(".countingSquare .shoppingBtn");
 
     //【LOGIC】
