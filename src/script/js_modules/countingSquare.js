@@ -14,7 +14,7 @@ export function countingSquare(){
     })
 
     shoppingBtn.addEventListener("click",function(){
-        location.href='/shopping_page/shoppingPage.html'
+        location.href='./shoppingPage.html'
     })
 
 }
