@@ -30,7 +30,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -48,11 +48,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .nav-mobile {
   display: none;
 }
@@ -324,7 +319,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -342,11 +337,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .aboutUs {
   width: 100vw;
   min-height: 150vh;
@@ -468,6 +458,7 @@ a:visited {
   .aboutUs .introduceSection .subtitle h3 {
     font-size: 1rem;
     text-align: center;
+    letter-spacing: 0.5rem;
   }
   .aboutUs .contactusSection {
     display: grid;
@@ -509,8 +500,8 @@ a:visited {
     align-items: center;
   }
   .aboutUs .contactusSection .socialmedia .socialmedisSquare i {
-    padding: 1.2rem;
-    margin: 0 1rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
   }
   .aboutUs .contactusSection .socialmedia .info-word {
     margin-top: 1rem;
@@ -541,7 +532,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -559,11 +550,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .footer {
   width: 100vw;
   min-height: 30vh;

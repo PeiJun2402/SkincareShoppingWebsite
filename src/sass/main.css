@@ -33,7 +33,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -51,11 +51,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .nav-mobile {
   display: none;
 }
@@ -514,7 +509,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -532,11 +527,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .recomdProduct {
   width: 100vw;
   min-height: 110vh;
@@ -849,7 +839,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -867,11 +857,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .introduceInfo {
   width: 100vw;
   min-height: 230vh;
@@ -1125,7 +1110,7 @@ a {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -1143,11 +1128,6 @@ a:visited {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-}
 .footer {
   width: 100vw;
   min-height: 30vh;
