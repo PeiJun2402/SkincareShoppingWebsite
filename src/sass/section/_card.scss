@@ -3,7 +3,11 @@
 @import"../Partials/globalRule";
 @import"../Partials/variable";
 
-
+ section{
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+  }
 .recomdProduct{
     width:100vw;
     min-height: 110vh;

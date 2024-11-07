@@ -480,12 +480,6 @@ a:visited {
   text-align: center;
 }
 
-section {
-  width: 80vw;
-  margin: auto;
-  height: 100vh;
-}
-
 h1, h2, h3 {
   font-family: "Averia Serif Libre", serif;
 }
@@ -525,6 +519,12 @@ a {
 }
 a:visited {
   color: black;
+}
+
+section {
+  width: 80vw;
+  margin: auto;
+  height: 100vh;
 }
 
 .recomdProduct {
