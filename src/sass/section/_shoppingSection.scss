@@ -484,6 +484,34 @@
 
         }
 
+        .tatalDetail{
+            .orderDetail{
+                .number{
+
+                    h5{
+                        font-size: 1.2rem;
+                        color: $primaryColor;
+                    }
+
+                }
+
+                .totalPrice{
+
+                    
+                    h5{
+                        font-size: 1.2rem;
+                        color: $pointColor;
+                    }
+
+                   
+    
+
+                }
+
+            }
+
+        }
+
 
     }
 

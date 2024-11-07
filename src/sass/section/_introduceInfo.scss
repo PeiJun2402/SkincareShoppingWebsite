@@ -152,7 +152,7 @@
 @media only screen and (max-width: 768px){
 
     .introduceInfo{
-        min-height: 300vh;
+        min-height: 350vh;
 
         .info-section{
             @include layout(column,center,center);

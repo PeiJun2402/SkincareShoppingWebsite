@@ -662,6 +662,14 @@ a:visited {
     border-radius: 2rem;
     cursor: pointer;
   }
+  .billInform .tatalDetail .orderDetail .number h5 {
+    font-size: 1.2rem;
+    color: #4B6C3C;
+  }
+  .billInform .tatalDetail .orderDetail .totalPrice h5 {
+    font-size: 1.2rem;
+    color: #FF9090;
+  }
   .shippingInfo {
     grid-column: 1/3;
   }
