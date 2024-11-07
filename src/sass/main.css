@@ -465,7 +465,7 @@ a:visited {
 }
 .hero-section {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-image: url("../../public/image/heroImg50.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -682,6 +682,7 @@ a:visited {
 @media only screen and (max-width: 768px) {
   .recomdProduct {
     width: 100vw;
+    min-height: 110dvh;
     background-color: #566650;
   }
   .recomdProduct .recomd-title {
@@ -980,7 +981,7 @@ a:visited {
 
 @media only screen and (max-width: 768px) {
   .introduceInfo {
-    min-height: 300vh;
+    min-height: 300dvh;
   }
   .introduceInfo .info-section {
     display: flex;

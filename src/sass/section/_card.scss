@@ -198,6 +198,7 @@
 
     .recomdProduct{
         width:100vw;
+        min-height: 110dvh;
         background-color: $primary5;
     
     
@@ -366,36 +367,6 @@
 
         }
 
-
-        // .card-section{
-        //     width: 100vw;
-        //     height: 100vh;
-    
-        //     .card-title{
-        //         text-align: center;
-        //         padding: 0;
-    
-        //         h1{
-        //             font-size: 2rem;
-        //             margin-bottom: 1rem;
-        //         }
-        //     }
-    
-        //     .card-square{
-        //         width: 100%;
-        //         height: 90%;
-        //         margin: 0;
-    
-        //         @include RWD-flex(space-around,center);
-      
-    
-        //         .single-card{
-        //             width: 80%;
-        //             height: 25%;
-        //         }
-    
-        //     }
-        // }
     }
 
    
