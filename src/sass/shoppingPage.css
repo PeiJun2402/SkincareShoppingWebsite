@@ -48,6 +48,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .nav-mobile {
   display: none;
 }
@@ -337,6 +342,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .shoppingSection {
   width: 100vw;
   min-height: 150vh;
@@ -693,6 +703,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .footer {
   width: 100vw;
   min-height: 30vh;

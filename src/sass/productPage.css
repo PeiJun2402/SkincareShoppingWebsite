@@ -48,6 +48,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .nav-mobile {
   display: none;
 }
@@ -360,6 +365,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .product-section {
   width: 80vw;
   min-height: 270vh;
@@ -550,6 +560,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .footer {
   width: 100vw;
   min-height: 30vh;

@@ -54,6 +54,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .nav-mobile {
   display: none;
 }
@@ -343,6 +348,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .shoppingSection {
   width: 100vw;
   min-height: 150vh;
@@ -699,6 +709,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .product-content {
   width: 100vw;
   min-height: 50vh;
@@ -837,6 +852,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .introduceInfo {
   width: 100vw;
   min-height: 230vh;
@@ -971,7 +991,7 @@ a:visited {
   }
   .introduceInfo .info-section .info-single-card {
     width: 90%;
-    max-height: 500px;
+    max-height: 600px;
     margin: 3rem 0;
     background-color: white;
     border: 1px solid black;
@@ -1108,6 +1128,11 @@ a:visited {
   color: black;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 .footer {
   width: 100vw;
   min-height: 30vh;
