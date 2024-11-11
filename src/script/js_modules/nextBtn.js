@@ -19,20 +19,25 @@ export function nextBtn(){
     const paymentMethod = document.querySelector(".paymentMethod");
     const address = document.querySelector(".address");
 
+    const getData = localStorage.getItem("product");
+    const cartItemData = JSON.parse(getData);
+
 
     nextStepBtn1.addEventListener("click",function(e){
+        if(cartItemData.length > 0){
         displayItem.style.display = "none"
         shippingInfo.style.display = "block"
         tatalDetail.style.display = "block"
 
         cartItem(".totalDoller1",".quantityNumber1");
 
+        
         prdcedureDivs.forEach((prdcedureDiv,index)=>{
-            
-           
+        
+        
             if(prdcedureDiv.className === "atStep"){
                 prdcedureDiv.classList.remove("atStep");
-               
+                
             }
 
             if(index === 1 ){
@@ -41,7 +46,14 @@ export function nextBtn(){
             }
 
         })
+    
 
+        }
+        else{
+            window.alert("請加入產品到購物車")
+        }
+
+        
     })
 
     nextStepBtn2.addEventListener("click",function(e){
