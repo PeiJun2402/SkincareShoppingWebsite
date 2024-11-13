@@ -1,18 +1,14 @@
 import { purchasingProductData } from './purchasingProductData.js';
 
 export function addProductBtn(){
+    const shoppingProductBtn = document.querySelector(".shoppingProductBtn");
 
-    document.body.addEventListener("click", function(e) {
+    shoppingProductBtn.addEventListener("click", function(e) {
+        
 
-       
+        const addBtnID = Number(e.target.id); 
+        purchasingProductData(addBtnID);
 
-        if (e.target.classList.contains("shoppingProductBtn")) {
-            const addBtnID = Number(e.target.id);
-            
-            purchasingProductData(addBtnID);
-         
-          
-        }
       });
 
 

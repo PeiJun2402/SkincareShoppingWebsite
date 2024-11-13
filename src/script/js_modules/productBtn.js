@@ -3,9 +3,11 @@ export async function productBtn(){
     //【CATCH】html element
     const productPlusBtn = document.querySelector(".productPlusBtn");
     const productMinusBtn = document.querySelector(".productMinusBtn");
+    const productForm = document.querySelector(".productForm");
     const productInput = document.querySelector(".add-shoppingCart input");
-    let productQty =Number(productInput.value)
     const productPrice = document.querySelector(".productPrice");
+
+    let productQty =Number(productInput.value)
 
 
     //product data
@@ -26,7 +28,7 @@ export async function productBtn(){
      const productInfo = poductArrays.find((poductArray)=>{return poductArray.id === id});
      productPrice.innerHTML = productInfo.price * productQty;
 
-    productPlusBtn.addEventListener("click",function(){
+    productPlusBtn.addEventListener("click",function(e){ 
         productQty++;
         productInput.value = productQty;
         productPrice.innerHTML = productInfo.price * productQty;
@@ -39,4 +41,11 @@ export async function productBtn(){
             productPrice.innerHTML = productInfo.price * productQty;
         }
     })
+
+    productForm.addEventListener("submit",function(e){
+        e.preventDefault()
+        productQty =Number(productInput.value)
+        productPrice.innerHTML = productInfo.price * productQty;
+    })
+
 }
