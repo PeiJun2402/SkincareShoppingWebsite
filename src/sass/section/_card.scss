@@ -191,6 +191,33 @@
     
 }
 
+@media only screen and (max-width:  840px){
+
+    .recomdProduct{
+
+        .recomd-section{
+            .card-square{
+                width: 80%;
+                grid-auto-columns:calc( 100% / 2 - 1rem);
+
+
+        
+
+            }
+
+        }
+       
+
+           
+
+        }
+
+    
+
+   
+
+}
+
 @media only screen and (max-width:  768px){
 
     .recomdProduct{
@@ -366,4 +393,5 @@
    
 
 }
+
 

@@ -31,7 +31,7 @@
             @include layout(column,center,flex-start);
 
             .logoword{
-                 font-size: 4rem;
+                 font-size: 3rem;
                  color: white;
                   font-family: $AveriaSerifLibre, serif;
             }
@@ -63,7 +63,7 @@
             @include layout(column,center,center);
 
             h3{
-                font-size: 2rem;
+                font-size: 1.7rem;
                 margin-bottom: 1rem;
 
             }
@@ -98,7 +98,7 @@
             
 
             h3{
-                font-size: 2rem;
+                font-size: 1.7rem;
                 margin-bottom: 2rem;
             }
             p{

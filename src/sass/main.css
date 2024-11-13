@@ -670,6 +670,12 @@ a:visited {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 840px) {
+  .recomdProduct .recomd-section .card-square {
+    width: 80%;
+    grid-auto-columns: calc(50% - 1rem);
+  }
+}
 @media only screen and (max-width: 768px) {
   .recomdProduct .recomd-title {
     padding: 2.5rem 0 0 5rem;
@@ -1147,7 +1153,7 @@ a:visited {
   align-items: flex-start;
 }
 .footer .footerSection .brandName .logoword {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   font-family: "Averia Serif Libre", serif;
 }
@@ -1175,7 +1181,7 @@ a:visited {
   align-items: center;
 }
 .footer .footerSection .siteMap h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 .footer .footerSection .siteMap ul {
@@ -1206,7 +1212,7 @@ a:visited {
   align-items: center;
 }
 .footer .footerSection .contactUs h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 .footer .footerSection .contactUs p {

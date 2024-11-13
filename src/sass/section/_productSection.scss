@@ -161,6 +161,31 @@
 
 }
 
+@media only screen and (max-width: 840px){
+
+    .product-section{
+        .menu-btn-section{
+            @include layout(row,center,center);
+           
+    
+            .menuBtn{
+                padding: 1rem 2.5rem;
+                font-size: 1rem;
+               
+    
+            }
+    
+    
+        }
+        
+        .product-square{
+            @include gridLayout(2,1fr);
+
+        }
+    }
+
+}
+
 @media only screen and (max-width: 768px){
 
     .product-section{
