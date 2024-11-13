@@ -194,11 +194,54 @@
 @media only screen and (max-width:  840px){
 
     .recomdProduct{
+        min-height: 70vh;
+
 
         .recomd-section{
+            .arrow-left{
+                position: absolute;
+                color: black;
+                top: 110%;
+                left: 30%;
+    
+                .arrowLeftBtn{
+                    font-size: 1.2rem;
+                    border: none;
+                    background-color: white;
+                    padding: 1rem 1.2rem;
+                    border-radius: 2rem;
+                    cursor: pointer;
+    
+                }
+    
+            }
+            .arrow-right{
+                position: absolute;
+                color: black;
+                top: 110%;
+                right: 30%;
+    
+                
+                
+                .arrowRightBtn
+                {
+                    font-size: 1.2rem;
+                    border: none;
+                    background-color: white;
+                    padding: 1rem 1.2rem;
+                    border-radius: 2rem;
+                    cursor: pointer;
+    
+                }
+    
+            }
             .card-square{
                 width: 80%;
                 grid-auto-columns:calc( 100% / 2 - 1rem);
+
+                .single-card{
+                    min-height: 40vh;
+                }
 
 
         

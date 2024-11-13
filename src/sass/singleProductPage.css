@@ -926,9 +926,8 @@ a:visited {
 .introduceInfo .info-section .info-single-card .info-word h2 {
   flex: 1.5;
   font-family: "Noto Sans TC", serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  padding-right: 2rem;
   border-right: 2px solid black;
   letter-spacing: 0.2rem;
 }
@@ -994,6 +993,27 @@ a:visited {
 }
 
 @media only screen and (max-width: 840px) {
+  .introduceInfo {
+    min-height: 150vh;
+  }
+  .introduceInfo .info-section .info-single-card .info-word h2 {
+    font-size: 1.5rem;
+    padding-right: 0rem;
+  }
+  .introduceInfo .info-section .info-single-card .info-word .pInfoWord {
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .introduceInfo .info-section .info-single-card .info-word .pInfoWord p {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
   .introduceInfo {
     min-height: 300vh;
   }
