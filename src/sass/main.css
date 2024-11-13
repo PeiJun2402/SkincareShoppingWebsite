@@ -396,7 +396,7 @@ a:visited {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1670px) {
   .nav-mobile {
     display: block;
     max-width: 90vw;
@@ -866,8 +866,8 @@ a:visited {
   margin-top: 1rem;
 }
 .introduceInfo .info-section .info-single-card {
-  width: 80%;
-  max-height: 400px;
+  width: 85%;
+  max-height: 500px;
   margin: 3rem 0;
   background-color: white;
   border: 1px solid black;
@@ -1215,7 +1215,7 @@ a:visited {
   margin: 0.2rem 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1670px) {
   .footer {
     margin-top: 5rem;
   }
