@@ -28,7 +28,7 @@
 
     .recomd-section{
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
         position: relative;
 
         .arrow-left{
@@ -266,12 +266,15 @@
 @media only screen and (max-width:  768px){
 
     .recomdProduct{
+        min-height: 100vh;
        
     
     
         .recomd-title{
             padding: 2.5rem 0 0 5rem;
+            margin-bottom: 1rem;
             color: $point3;
+
     
             h1{
                 font-size: 2.5rem;
@@ -287,11 +290,12 @@
         
 
         .recomd-section{
-            min-height: inherit;
+            min-height: 75vh;
+
             .arrow-left{
                 position: absolute;
                 color: black;
-                top: 90%;
+                top: 85%;
                 left: 30%;
     
                 .arrowLeftBtn{
@@ -308,7 +312,7 @@
             .arrow-right{
                 position: absolute;
                 color: black;
-                top: 90%;
+                top: 85%;
                 right: 30%;
     
                 
