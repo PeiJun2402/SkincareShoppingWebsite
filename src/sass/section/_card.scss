@@ -198,6 +198,8 @@
 
 
         .recomd-section{
+            
+            
             .arrow-left{
                 position: absolute;
                 color: black;
@@ -285,10 +287,11 @@
         
 
         .recomd-section{
+            min-height: inherit;
             .arrow-left{
                 position: absolute;
                 color: black;
-                top: 110%;
+                top: 90%;
                 left: 30%;
     
                 .arrowLeftBtn{
@@ -305,7 +308,7 @@
             .arrow-right{
                 position: absolute;
                 color: black;
-                top: 110%;
+                top: 90%;
                 right: 30%;
     
                 
